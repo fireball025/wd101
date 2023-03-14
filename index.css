@@ -1,0 +1,194 @@
+/* Body styles */
+body {
+  background-color: #f2f2f2;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Form container styles */
+form {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+  border: 1px solid #ccc;
+}
+
+/* Form input styles */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus {
+  outline: none;
+  border-bottom: 2px solid #ff6b6b;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  font-size: 16px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #f9f9f9;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border-bottom: 2px solid #ff6b6b;
+}
+
+/* Form checkbox styles */
+input[type="checkbox"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+label[for="acceptTerms"] {
+  display: inline-block;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+/* Form button styles */
+button[type="submit"] {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff4949;
+}
+
+/* Red margin on bottom */
+form:invalid input:focus {
+  outline: none;
+  border-bottom: 2px solid #ff6b6b;
+}
+
+form:invalid textarea:focus {
+  outline: none;
+  border-bottom: 2px solid #ff6b6b;
+}
+
+/* Form validation styles */
+input:required:invalid {
+  border-bottom: 2px solid #ff6b6b;
+}
+
+input[type="email"]:required:invalid {
+  background-image: url('invalid-email.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+input[type="email"]:required:valid {
+  background-image: url('valid-email.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+th {
+  background-color: #eee;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.table-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.table-header button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.table-header button:hover {
+  background-color: #3e8e41;
+}
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.table-footer select {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.table-footer button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.table-footer button:hover {
+  background-color: #3e8e41;
+}
