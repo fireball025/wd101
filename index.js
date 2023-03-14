@@ -7,21 +7,26 @@ const form = document.getElementById('myForm');
               const email = document.getElementById('email').value;
               const password = document.getElementById('password').value;
               const birthdate = document.getElementById('birthdate').value;
+              const acceptTerms = document.getElementById('acceptTerms').checked;
+              
               if (validateForm()) { // Only add row to table if form is valid
                 const newRow = table.insertRow();
                 const nameCell = newRow.insertCell();
                 const emailCell = newRow.insertCell();
                 const passwordCell = newRow.insertCell();
                 const birthdateCell = newRow.insertCell();
+                const acceptTermsCell = newRow.insertCell();
                 nameCell.textContent = name;
                 emailCell.textContent = email;
                 passwordCell.textContent = password;
                 birthdateCell.textContent = birthdate;
+                acceptTermsCell.textContent = acceptTerms ? "Yes" : "No";
                 // Clear form values
                 document.getElementById('name').value = '';
                 document.getElementById('email').value = '';
                 document.getElementById('password').value = '';
                 document.getElementById('birthdate').value = '';
+                document.getElementById('acceptTerms').checked = false;
               }
             });
             
